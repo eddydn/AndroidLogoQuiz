@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    tools:context="edmt.dev.androidlogoquiz.MainActivity">
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_alignParentTop="true"
+       android:layout_gravity="center_horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_above="@+id/btnSubmit"
+       >
+
+       <ImageView
+           android:id="@+id/imgLogo"
+           android:layout_width="match_parent"
+           android:layout_height="200dp" />
+
+       <GridView
+           android:id="@+id/gridViewAnswer"
+           android:layout_margin="20dp"
+           android:padding="4dp"
+           android:horizontalSpacing="4dp"
+           android:verticalSpacing="4dp"
+           android:columnWidth="40dp"
+           android:numColumns="auto_fit"
+           android:scrollbars="none"
+           android:stretchMode="columnWidth"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+
+       <GridView
+           android:id="@+id/gridViewSuggest"
+           android:layout_margin="20dp"
+           android:padding="4dp"
+           android:horizontalSpacing="4dp"
+           android:verticalSpacing="4dp"
+           android:columnWidth="40dp"
+           android:numColumns="auto_fit"
+           android:scrollbars="none"
+           android:stretchMode="columnWidth"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+
+   </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:text="Submit"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
